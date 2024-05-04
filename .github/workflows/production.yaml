@@ -17,9 +17,8 @@ Test-NextJS:
       - name: Install dependencies
         run: npm install
       - name: Run tests
-        run: npm run test
-        
-  Deploy-Production:
+        run: npm run test  
+Deploy-Production:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
