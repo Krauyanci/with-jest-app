@@ -18,12 +18,7 @@ jobs:
         run: npm install
       - name: Run tests
         run: npm run test
-<<<<<<< HEAD:.github/workflows/preview.yaml
-  
-  Deploy-Preview:
-=======
   Deploy-Testing:
->>>>>>> 9c5dcbe57b873fec5409c8b613560ac469c36f45:.github/workflows/testing.yaml
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
