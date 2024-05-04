@@ -1,11 +1,11 @@
-name: Vercel Preview Deployment
+name: Vercel Testing Deployment
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 on:
   push:
-    branches-ignore:
-      - production
+    branches:
+      - testing
 jobs:
   Test-NextJS:
     runs-on: ubuntu-latest
@@ -18,8 +18,12 @@ jobs:
         run: npm install
       - name: Run tests
         run: npm run test
+<<<<<<< HEAD:.github/workflows/preview.yaml
   
   Deploy-Preview:
+=======
+  Deploy-Testing:
+>>>>>>> 9c5dcbe57b873fec5409c8b613560ac469c36f45:.github/workflows/testing.yaml
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
