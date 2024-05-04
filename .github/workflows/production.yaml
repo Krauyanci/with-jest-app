@@ -7,7 +7,7 @@ on:
     branches:
       - production
 jobs:
-Test-NextJS:
+  Test-NextJS:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,7 +18,7 @@ Test-NextJS:
         run: npm install
       - name: Run tests
         run: npm run test  
-Deploy-Production:
+  Deploy-Production:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
